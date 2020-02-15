@@ -9,7 +9,7 @@ use Messenger\Projection\ProjectorInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
-final class ProjectionEventSubscriber implements EventSubscriberInterface
+class ProjectionEventSubscriber implements EventSubscriberInterface
 {
     /** @var ProjectorInterface[] */
     private $projectors;
