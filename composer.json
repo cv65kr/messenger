@@ -1,5 +1,7 @@
 {
   "name": "cv65kr/messenger",
+  "description": "CQRS + Event Sourcing for Symfony.",
+  "license": "MIT",
   "require": {
     "php": "^7.2",
     "symfony/messenger": "^4.4|^5.0",
@@ -10,6 +12,7 @@
     "doctrine/doctrine-bundle": "^1.8|^2.0"
   },
   "require-dev": {
+    "sylius-labs/coding-standard": "^3.1",
     "phpunit/phpunit": "^8.5"
   },
   "autoload": {
@@ -19,7 +22,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Messenger\\": "tests/"
+      "Messenger\\Tests\\": "tests/"
     }
   }
 }
