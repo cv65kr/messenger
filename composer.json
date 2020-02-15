@@ -22,7 +22,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Messenger\\Tests\\": "tests/"
+      "Messenger\\": "tests/"
     }
   }
 }
