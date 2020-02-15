@@ -24,5 +24,14 @@
     "psr-4": {
       "Messenger\\": "tests/"
     }
+  },
+  "scripts": {
+    "fix": [
+      "vendor/bin/ecs check --ansi --no-progress-bar src tests --fix"
+    ],
+    "test": [
+      "composer validate --strict",
+      "vendor/bin/phpunit --colors=always"
+    ]
   }
 }
