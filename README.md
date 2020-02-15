@@ -14,6 +14,12 @@ Activate in `config/bundles.php`:
 Messenger\MessengerBundle::class => ['all' => true],
 ```
 
+Update database (migration in future):
+
+```bash
+bin/console d:s:u --force --dump-sql
+```
+
 To activate async bus, open `config/packages/messenger.yaml` and paste:
 
 ```yaml
