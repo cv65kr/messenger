@@ -1,0 +1,20 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Messenger\:
+    resource: '../../../src/*'
+    exclude: '../../../src/{DependencyInjection,Entity}'
+
+  Messenger\Bus\CommandBus:
+    arguments:
+      - '@messenger.bus.command'
+
+  Messenger\Bus\QueryBus:
+    arguments:
+      - '@messenger.bus.query'
+
+  Messenger\Bus\EventBus:
+    arguments:
+      - '@messenger.bus.event'
