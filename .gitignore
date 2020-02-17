@@ -1,3 +1,7 @@
+build/
+var/
 vendor/
 composer.lock
 .phpunit.result.cache
+tests/Functional/App/var/*
+!tests/Functional/App/var/.gitkeep

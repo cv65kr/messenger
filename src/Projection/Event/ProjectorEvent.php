@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Messenger\Projection\Event;
 
 use Messenger\Event\EventInterface;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Contracts\EventDispatcher\Event;
 
 class ProjectorEvent extends Event
 {

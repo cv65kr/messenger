@@ -9,7 +9,8 @@
     "ramsey/uuid": "^3.9",
     "ramsey/uuid-doctrine": "^1.6",
     "beberlei/assert": "^3.2",
-    "doctrine/doctrine-bundle": "^1.8|^2.0"
+    "doctrine/doctrine-bundle": "^1.8|^2.0",
+    "symfony/framework-bundle": "^5.0"
   },
   "require-dev": {
     "sylius-labs/coding-standard": "^3.1",

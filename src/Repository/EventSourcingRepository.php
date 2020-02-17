@@ -14,7 +14,7 @@ use Messenger\Event\EventTransformer;
 use Messenger\Projection\AggregateRootTransformer;
 use Messenger\Projection\Event\ProjectorEvent;
 use Ramsey\Uuid\Uuid;
-use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 
 abstract class EventSourcingRepository
 {

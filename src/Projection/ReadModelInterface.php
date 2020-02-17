@@ -4,11 +4,9 @@ declare(strict_types=1);
 
 namespace Messenger\Projection;
 
-use Messenger\Event\EventInterface;
-
 interface ReadModelInterface
 {
-    public static function fromSerializable(EventInterface $event);
+    public static function fromSerializable(array $data);
 
     public function serialize(): array;
 

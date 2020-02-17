@@ -1,0 +1,25 @@
+services:
+  _defaults:
+    public: true
+
+  Messenger\Bus\CommandBus:
+    arguments:
+      - '@messenger.bus.command'
+
+  Messenger\Bus\QueryBus:
+    arguments:
+      - '@messenger.bus.query'
+
+  Messenger\Bus\TestCommandHandler:
+    tags:
+      - { name: messenger.message_handler, bus: messenger.bus.command }
+
+  Messenger\Bus\TestQueryHandler:
+    tags:
+      - { name: messenger.message_handler, bus: messenger.bus.query }
+
+  Messenger\EventSubscriber\ProjectionEventSubscriber:
+    arguments:
+      - '@service_container'
+
+  Messenger\Projection\TestProjector: ~
