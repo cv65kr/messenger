@@ -1,6 +1,7 @@
 {
   "name": "cv65kr/messenger",
   "description": "CQRS + Event Sourcing for Symfony.",
+  "type": "symfony-bundle",
   "license": "MIT",
   "require": {
     "php": "^7.2",
